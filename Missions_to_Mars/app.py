@@ -15,7 +15,6 @@ def index():
 
     return render_template("index.html", mars_data = mars_data)
 
-
 @app.route("/scrape")
 def scrape_data():
     # Run scraped fuctions
@@ -24,4 +23,4 @@ def scrape_data():
     return redirect("/", code=302)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='127.0.0.1', port=5006)
