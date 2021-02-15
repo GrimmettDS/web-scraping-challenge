@@ -107,10 +107,6 @@ def scrape():
     results = soup.find('div', class_='collapsible results')
     items = results.find_all('div', class_='item')
 
-
-    # In[15]:
-
-
     pic_url = []
 
     for item in items:
@@ -133,11 +129,18 @@ def scrape():
         print(pic_url[pic]['title'])
         print(pic_url[pic]['img_url'])
 
+    pic_1 = {'title': pic_url[0], 'img_url':pic_url[0]}
+    pic_2 = {'title': pic_url[1], 'img_url':pic_url[1]}
+    pic_3 = {'title': pic_url[2], 'img_url':pic_url[2]}
+    pic_4 = {'title': pic_url[3], 'img_url':pic_url[3]}
+
+    allimage_url = [pic_1, pic_2, pic_3, pic_4]
+
 
     main_info = {'title':title}
     main_info[newpara]=newpara
     main_info['mars_df_html']=mars_df_html
-    main_info['pic_url']=pic_url
+    main_info['allimage_url']=allimage_url
 
     browser.quit()
 
