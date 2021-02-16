@@ -15,7 +15,7 @@
         <div class="container-fluid">
                 <div class="jumbotron text-center">
                         <h1>Mission to Mars</h1>
-                        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+                        <p><a class="btn btn-primary btn-lg" href="../scrape.py" role="button">Scrape New Data</a></p>
                 </div>
                         <!-- <div> -->
                 <div class="container">
@@ -34,17 +34,17 @@
                         <div class="row">
                                 <div class="col-md-6">
                                         <div class="thumbnail">
-                                                <img class="img-responsive" src="{{mars_data.allimage_url[0].img_url}}" alt="Cerberus Hemisphere">
+                                                <img class="img-responsive" src="{{mars_data.pic_url[0].img_url[0]}}" alt="Cerberus Hemisphere">
                                                 <div class="caption">
-                                                        <h4>{{mars_data.allimage_url[0].title}}</h4>
+                                                        <h4>{{mars_data.pic_url[0].title}}</h4>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="col-md-6">
                                         <div class="thumbnail">
-                                                <img class="img-responsive" src="{{mars_data.allimage_url[1].img_url}}" alt="Schiaparelli Hemisphere">
+                                                <img class="img-responsive" src="{{mars_data.pic_url[1].img_url[1]}}" alt="Schiaparelli Hemisphere">
                                                 <div class="caption">
-                                                        <h4>{{mars_data.allimage_url[1].title}}</h4>
+                                                        <h4>{{mars_data.pic_url[1].title}}</h4>
                                                 </div>
                                         </div>
                                 </div>
@@ -53,17 +53,17 @@
                         <!-- <div class="w-100"></div> -->
                                 <div class="col-md-6">
                                         <div class="thumbnail">
-                                                <img class="img-responsive" src="{{mars_data.allimage_url[2].img_url}}" alt="Syrtis Major Hemisphere">
+                                                <img class="img-responsive" src="{{mars_data.pic_url[2].img_url[2]}}" alt="Syrtis Major Hemisphere">
                                                 <div class="caption">
-                                                        <h4>{{mars_data.allimage_url[2].title}}</h4>
+                                                        <h4>{{mars_data.pic_url[2].title}}</h4>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="col-md-6">
                                         <div class="thumbnail">
-                                                <img class="img-responsive" src="{{mars_data.allimage_url[3].img_url}}" alt="Valles Marineris Hemisphere">
+                                                <img class="img-responsive" src="{{mars_data.pic_url[3].img_url[3]}}" alt="Valles Marineris Hemisphere">
                                                 <div class="caption">
-                                                        <h4>{{mars_data.allimage_url[3].title}}</h4>
+                                                        <h4>{{mars_data.pic_url[3].title}}</h4>
                                                 </div>
                                         </div>
                                 </div>
